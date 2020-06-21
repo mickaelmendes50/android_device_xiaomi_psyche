@@ -34,6 +34,7 @@ on post-fs-data
     mkdir /data/vendor/thermal/config 0771 root system
 
 on boot
+    chown system system /sys/touchpanel/double_tap
     chown system system /sys/class/touch/touch_dev/palm_sensor
     chown system system /sys/class/touch/touch_dev/partial_diff_data
     chown system system /sys/class/thermal/thermal_message/sconfig
