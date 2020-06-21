@@ -73,6 +73,9 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# Gestures
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+
 # GKI
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 

@@ -245,6 +245,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPAPsycheFrameworks \
     PsycheFrameworks \
     PsycheSystemUI \
     FrameworksResTarget \
