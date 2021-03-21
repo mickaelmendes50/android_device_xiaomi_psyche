@@ -81,6 +81,13 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 # GKI
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
+# HIDL
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/configs/vintf/manifest.xml
+
+DEVICE_MATRIX_FILE += \
+    device/qcom/common/compatibility_matrix.xml
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
