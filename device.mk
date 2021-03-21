@@ -199,6 +199,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.incremental.enable=1
 
+# Init
+PRODUCT_PACKAGES += \
+    init.qti.dcvs.sh \
+    init.target.rc
+
 # Keymaster
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.allow_encrypt_override=true \
