@@ -154,6 +154,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.use_layer_ext=0 \
     vendor.display.use_smooth_motion=0
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.set_idle_timer_ms=1500 \
+    ro.surface_flinger.set_touch_timer_ms=200 \
+    ro.surface_flinger.set_display_power_timer_ms=1000 \
+    ro.surface_flinger.use_content_detection_for_refresh_rate=true
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.display.defer_fps_frame_count=2
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/display/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
@@ -250,6 +259,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     AOSPAPsycheFrameworks \
     PsycheFrameworks \
+    PsycheSettings \
     PsycheSystemUI \
     FrameworksResTarget \
     WifiResTarget
