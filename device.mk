@@ -242,6 +242,7 @@ PRODUCT_SOONG_NAMESPACES += \
 # Overlays
 PRODUCT_PACKAGES += \
     PsycheFrameworks \
+    PsycheSystemUI \
     FrameworksResTarget \
     WifiResTarget
 
