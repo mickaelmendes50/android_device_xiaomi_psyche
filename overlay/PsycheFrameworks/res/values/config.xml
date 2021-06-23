@@ -39,7 +39,7 @@
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
         M 514,52
-        a 20,20 0 1 0 52,0 
+        a 20,20 0 1 0 52,0
         a 20,20 0 1 0 -52,0
         Z
         @left
