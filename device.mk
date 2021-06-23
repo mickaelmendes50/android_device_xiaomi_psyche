@@ -55,6 +55,10 @@ PRODUCT_PACKAGES += \
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Display
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/display/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpmhalservice.enable=1
@@ -124,6 +128,9 @@ PRODUCT_PACKAGES += \
 # Vendor Service Manager
 PRODUCT_PACKAGES += \
     vndservicemanager
+
+# Vendor
+$(call inherit-product, vendor/xiaomi/psyche/psyche-vendor.mk)
 
 # Verified Boot
 PRODUCT_COPY_FILES += \

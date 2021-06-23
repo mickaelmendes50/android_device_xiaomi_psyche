@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ * Last Modified: March 03, 2020
+-->
+<Group id="LTMConfig">
+    <!-- version of LTMConfig.xml should be maintained -->
+    <version>"0.6"</version>
+
+    <!-- defaults will be used unless any mode overrides params -->
+    <default>
+        <AmbientLightToContrastStrengthTableInput>0 8000 16000 24000 32000</AmbientLightToContrastStrengthTableInput>
+        <AmbientLightToContrastStrengthTableOutput>0 0 50 150 255</AmbientLightToContrastStrengthTableOutput>
+        <AmbientLightToContrastStrengthEnable>1</AmbientLightToContrastStrengthEnable>
+
+        <BacklightReductionTableInput>0 0 0 2047 2047</BacklightReductionTableInput>
+        <BacklightReductionTableOutput>256 256 256 256 256</BacklightReductionTableOutput>
+        <BacklightReductionEnable>0</BacklightReductionEnable>
+
+        <LuxStartPoint>8000</LuxStartPoint>
+
+        <TemporalFilterSpeedStepSizeOne>16</TemporalFilterSpeedStepSizeOne>
+        <TemporalControlTableInput>0 30 50 128 160 256</TemporalControlTableInput>
+        <TemporalControlTableOutput>1 2 4 4 4 4</TemporalControlTableOutput>
+
+        <BacklightToContrastStrengthTableInput>0 0 0 2047 2047</BacklightToContrastStrengthTableInput>
+        <BacklightToContrastStrengthTableOutput>256 256 256 256 256</BacklightToContrastStrengthTableOutput>
+        <BacklightToContrastStrengthEnable>0</BacklightToContrastStrengthEnable>
+
+        <param001>256</param001>
+        <param002>128</param002>
+        <param003>1</param003>
+        <param004>60</param004>
+
+        <param005>1.2</param005>
+
+        <param006>50</param006>
+        <param007>8</param007>
+    </default>
+
+    <mode id="game">
+        <BacklightReductionTableInput>0 0 0 2047 2047</BacklightReductionTableInput>
+        <BacklightReductionTableOutput>256 256 256 256 256</BacklightReductionTableOutput>
+        <BacklightReductionEnable>0</BacklightReductionEnable>
+        <AmbientLightToContrastStrengthTableInput>0 2000 5000 10000 30000</AmbientLightToContrastStrengthTableInput>
+        <AmbientLightToContrastStrengthTableOutput>0 0 50 150 255</AmbientLightToContrastStrengthTableOutput>
+        <AmbientLightToContrastStrengthEnable>1</AmbientLightToContrastStrengthEnable>
+        <LuxStartPoint>2000</LuxStartPoint>
+    </mode>
+</Group>
