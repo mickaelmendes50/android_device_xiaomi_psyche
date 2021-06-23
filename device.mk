@@ -38,6 +38,34 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
 
+# Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    aaudio.mmap_policy=1 \
+    persist.vendor.audio.delta.refresh=true \
+    persist.vendor.audio.misound.disable=true \
+    persist.vendor.audio.ring.filter.mask=0 \
+    ro.audio.monitorRotation=true \
+    ro.config.vc_call_vol_steps=11 \
+    ro.vendor.audio.enhance.support=false \
+    ro.vendor.audio.gain.support=true \
+    ro.vendor.audio.karaok.support=true \
+    ro.vendor.audio.ns.support=false \
+    ro.vendor.audio.scenario.support=true \
+    ro.vendor.audio.sdk.fluencetype=fluence \
+    ro.vendor.audio.soundfx.type=mi \
+    ro.vendor.audio.soundfx.usb=true \
+    ro.vendor.audio.us.proximity=true \
+    ro.vendor.audio.us.type=mius \
+    ro.vendor.audio.zoom.support=true \
+    ro.vendor.audio.zoom.type=1 \
+    vendor.audio.adm.buffering.ms=6 \
+    vendor.audio.feature.dynamic_ecns.enable=false \
+    vendor.audio.feature.spkr_prot.enable=false \
+    vendor.audio.hal.output.suspend.supported=false \
+    vendor.audio.offload.track.enable=false \
+    vendor.audio.spkcal.copy.inhal=true \
+    vendor.audio.usb.disable.sidetone=true
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
@@ -71,6 +99,9 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-service
 
 # Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera.disable_zsl_mode=true
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
@@ -89,6 +120,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.charger.enable_suspend=1
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.cp.fcc_main_ua=400000 \
+    persist.vendor.cp.taper_term_mv=7000 \
+    persist.vendor.cp.qc3p5_vfloat_offset_uv=110000 \
+    persist.vendor.pps.disallowed=1 \
+    persist.vendor.hvdcp_opti.disallowed=1
+
 # Config Store
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -105,6 +143,14 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.display.paneltype=2 \
+    ro.vendor.display.sensortype=2 \
+    vendor.display.enable_async_powermode=0 \
+    vendor.display.qdcm.mode_combine=1 \
+    vendor.display.use_layer_ext=0 \
+    vendor.display.use_smooth_motion=0
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/display/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
@@ -155,6 +201,24 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.allow_encrypt_override=true \
     ro.crypto.volume.filenames_mode="aes-256-cts" \
     ro.hardware.keystore_desede=true
+
+# Media (VPP)
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.media.video.frc=false \
+    debug.media.video.style=false \
+    debug.media.video.vpp=false \
+    debug.media.vpp.enable=false \
+    ro.vendor.media.video.frc.support=true \
+    ro.vendor.media.video.style.support=false \
+    ro.vendor.media.video.vpp.support=true \
+    vendor.media.vpp.aie.cade=100 \
+    vendor.media.vpp.aie.ltm=1 \
+    vendor.media.vpp.aie.ltmacebrih=0 \
+    vendor.media.vpp.aie.ltmacebril=20 \
+    vendor.media.vpp.aie.ltmacestr=37 \
+    vendor.media.vpp.aie.ltmsatgain=55 \
+    vendor.media.vpp.aie.ltmsatoff=55 \
+    vendor.media.vpp.debug.value.use=false
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
