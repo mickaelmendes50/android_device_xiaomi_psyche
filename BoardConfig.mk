@@ -92,6 +92,9 @@ DEVICE_MANIFEST_FILE += \
 DEVICE_MATRIX_FILE += \
     device/qcom/common/compatibility_matrix.xml
 
+# Hacks
+BUILD_BROKEN_DUP_RULES := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
