@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Public Sepolicy
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+    device/xiaomi/psyche/sepolicy/public
+
 # QCOM Sepolicy
 BOARD_SEPOLICY_DIRS += \
     device/xiaomi/psyche/sepolicy/vendor/qcom
