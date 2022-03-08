@@ -53,13 +53,4 @@
     on the headphone/microphone jack. When false use the older uevent framework -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
 
-   <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
-       autodetected from the Configuration. -->
-   <bool name="config_showNavigationBar">true</bool>
-
-   <!-- Package names to use with vendor iwlan implementation. -->
-   <string name="config_wlan_data_service_package" translatable="false">vendor.qti.iwlan</string>
-   <string name="config_wlan_network_service_package" translatable="false">vendor.qti.iwlan</string>
-   <string name="config_qualified_networks_service_package" translatable="false">vendor.qti.iwlan</string>
-
 </resources>
