@@ -1,0 +1,5 @@
+# Cirrus Device
+allow audioserver sysfs_f0_value:file rw_file_perms;
+
+# Sound Device
+allow audioserver sound_device:chr_file rw_file_perms;
