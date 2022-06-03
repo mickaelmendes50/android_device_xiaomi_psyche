@@ -1,0 +1,2 @@
+# Fingerprint
+type vendor_hal_xiaomi_fingerprint_hwservice, hwservice_manager_type;

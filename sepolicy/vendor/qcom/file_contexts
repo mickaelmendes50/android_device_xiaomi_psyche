@@ -1,0 +1,4 @@
+/data/vendor/sensor_log(/.*)?                    u:object_r:vendor_sensors_vendor_data_file:s0
+
+# Poweropt-service
+/(vendor|system/vendor)/bin/poweropt-service     u:object_r:vendor_poweroptservice_exec:s0
