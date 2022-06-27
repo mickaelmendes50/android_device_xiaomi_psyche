@@ -1,2 +1,2 @@
 # Fingerprint prop
-vendor_public_prop(vendor_fp_prop);
+vendor_restricted_prop(vendor_fingerprint_prop);
