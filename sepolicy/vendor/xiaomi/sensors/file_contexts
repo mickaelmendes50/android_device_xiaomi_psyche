@@ -1,0 +1,1 @@
+/data/vendor/sensor_log(/.*)?                       u:object_r:vendor_sensors_vendor_data_file:s0
