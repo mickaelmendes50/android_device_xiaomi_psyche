@@ -24,9 +24,7 @@ BOARD_SEPOLICY_DIRS += \
     device/xiaomi/psyche/sepolicy/vendor/xiaomi/camera \
     device/xiaomi/psyche/sepolicy/vendor/xiaomi/fingerprint \
     device/xiaomi/psyche/sepolicy/vendor/xiaomi/ir \
-    device/xiaomi/psyche/sepolicy/vendor/xiaomi/last_kmsg \
     device/xiaomi/psyche/sepolicy/vendor/xiaomi/power_supply \
-    device/xiaomi/psyche/sepolicy/vendor/xiaomi/radio \
     device/xiaomi/alioth/sepolicy/vendor/xiaomi/sensors \
     device/xiaomi/psyche/sepolicy/vendor/xiaomi/thermald \
     device/xiaomi/psyche/sepolicy/vendor/xiaomi/touch \

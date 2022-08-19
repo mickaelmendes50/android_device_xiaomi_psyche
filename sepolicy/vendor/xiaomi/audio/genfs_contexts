@@ -1,2 +1,2 @@
-# Cirrus
+# Label f0_value sysfs
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/f0_value                     u:object_r:sysfs_f0_value:s0

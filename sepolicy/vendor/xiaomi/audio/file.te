@@ -1,4 +1,2 @@
-# Cirrus Device
+# f0_value sysfs file
 type sysfs_f0_value, sysfs_type, fs_type;
-# Ultrasound
-type vendor_sysfs_iio, fs_type, sysfs_type;

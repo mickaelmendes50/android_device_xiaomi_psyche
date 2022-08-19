@@ -1,0 +1,2 @@
+# IIO sysfs file
+type vendor_sysfs_iio, fs_type, sysfs_type;

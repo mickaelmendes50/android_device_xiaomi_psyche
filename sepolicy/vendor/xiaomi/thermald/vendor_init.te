@@ -1,0 +1,2 @@
+# Allow vendor_init to set thermal prop
+set_prop(vendor_init, vendor_thermal_normal_prop)
