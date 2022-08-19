@@ -1,3 +1,5 @@
+# touchpanel for dt2w
 type sysfs_touchpanel, fs_type, sysfs_type;
-type sysfs_tp_partial_data, fs_type, sysfs_type;
+
+# xiaomi-touch: Palm sensor
 type vendor_sysfs_tp_virtual_prox, fs_type, sysfs_type;

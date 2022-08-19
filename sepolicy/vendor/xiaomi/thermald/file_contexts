@@ -3,3 +3,6 @@
 
 # Thermal data
 /data/vendor/thermal(/.*)?                  u:object_r:vendor_thermal_data_file:s0
+
+# Label thermal_hbm_disabled sysfs
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/thermal_hbm_disabled u:object_r:vendor_sysfs_graphics:s0

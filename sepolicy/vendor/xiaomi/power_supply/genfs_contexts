@@ -1,3 +1,4 @@
+# Xiaomi power supply sysfs
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-0066/power_supply/bq2597x-standalone                                         u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0034/884000.i2c:qcom,smb1396@34:qcom,div2_cp/power_supply/charge_pump_master u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0035/884000.i2c:qcom,smb1396@35:qcom,div2_cp_slave/power_supply/cp_slave     u:object_r:vendor_sysfs_battery_supply:s0
@@ -5,4 +6,7 @@ genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0055/power_supply/bms   
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0065/power_supply/bq2597x-master                                             u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-5/5-0066/power_supply/bq2597x-standalone                                         u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/888000.i2c/i2c-5/5-0055/power_supply/lionsemi                                                   u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/980000.i2c/i2c-0/0-0055/power_supply/bms_slave                                                  u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-5/5-0055/power_supply/bms_master                                                 u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-7/7-0055/power_supply/bms_master                                                 u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify                                                      u:object_r:vendor_sysfs_battery_supply:s0

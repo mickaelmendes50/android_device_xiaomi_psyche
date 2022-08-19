@@ -1,4 +1,4 @@
-# Fingerprint
+# Fingerprint properties
 persist.vendor.sys.fp.                  u:object_r:vendor_fingerprint_prop:s0
 ro.boot.fpsensor                        u:object_r:vendor_fingerprint_prop:s0
 ro.hardware.fp.                         u:object_r:vendor_fingerprint_prop:s0

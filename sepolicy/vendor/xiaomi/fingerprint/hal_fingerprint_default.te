@@ -1,4 +1,4 @@
-# Allow fingerprint HAL to create files in /data/vendor/fingerprint/
+# Allow fingerprint HAL to create vendor_fingerprint_data_file
 allow hal_fingerprint_default vendor_fingerprint_data_file:dir rw_dir_perms;
 allow hal_fingerprint_default vendor_fingerprint_data_file:file create_file_perms;
 
@@ -28,11 +28,11 @@ r_dir_file(hal_fingerprint_default, vendor_sysfs_graphics)
 # Allow hal_fingerprint_default to read in vendor_sysfs_spss
 r_dir_file(hal_fingerprint_default, vendor_sysfs_spss)
 
-# Allow hal_fingerprint_default to read in vendor_qdsp_device
-r_dir_file(hal_fingerprint_default, vendor_qdsp_device)
-
-# Allow hal_fingerprint_default to read in vendor_xdsp_device
-r_dir_file(hal_fingerprint_default, vendor_xdsp_device)
+# Allow hal_fingerprint_default to read QDSP and XDSP device
+allow hal_fingerprint_default {
+  vendor_qdsp_device
+  vendor_xdsp_device
+}:chr_file r_file_perms;
 
 # Allow hal_fingerprint_default to get IPerf interface
 hal_client_domain(hal_fingerprint_default, vendor_hal_perf)
