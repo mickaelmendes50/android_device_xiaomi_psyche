@@ -455,7 +455,7 @@ vendor/lib64/camera/components/com.arcsoft.node.deflicker.so|20e660c8bcb67ae2355
 vendor/lib64/camera/components/com.qti.node.memcpy.so|1decf88236acefce87d2e2c369a67d8d70af1abb
 vendor/lib64/camera/components/com.qti.node.customhwnode.so|8b7cab9692524c3efb739b44adf5624232a049f0
 vendor/lib64/camera/components/com.qti.node.swregistration.so|6e2327c02a944791181693ffd4f0d1f2386baae7
-vendor/lib64/camera/components/com.mi.node.watermark.so|fef0dad6aa0cf624622e62b96b0518608fd725d5
+vendor/lib64/camera/components/com.mi.node.watermark.so|4d8ff4ee3b62f3308a4d8c89bedff6bbc1dcc5f4
 vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so|b1223db085edfde92ff387f1d4031cbc9d4f4c91
 vendor/lib64/camera/components/com.mi.node.rearvideo.so|3fb12504aa002ae6d82c68153ee40d03bb3409c0
 vendor/lib64/camera/components/com.qti.hvx.binning.so|c62decd6007769a81b83f939dd241a9c30a35ca8
