@@ -32,7 +32,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
 
 # Audio
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     aaudio.mmap_policy=1 \
     persist.vendor.audio.delta.refresh=true \
     persist.vendor.audio.misound.disable=true \
@@ -75,7 +75,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@2.0.vendor \
     vendor.qti.hardware.fm@1.0.vendor
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
     persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false \
     persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2 \
@@ -101,7 +101,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-service
 
 # Camera
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     camera.disable_zsl_mode=true
 
 PRODUCT_COPY_FILES += \
@@ -122,7 +122,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.charger.enable_suspend=1
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.cp.fcc_main_ua=400000 \
     persist.vendor.cp.taper_term_mv=7000 \
     persist.vendor.cp.qc3p5_vfloat_offset_uv=110000 \
@@ -145,24 +145,24 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Display
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.display.paneltype=2 \
     ro.vendor.display.sensortype=2 \
     vendor.display.qdcm.mode_combine=1 \
     vendor.display.use_layer_ext=0 \
     vendor.display.use_smooth_motion=0
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.surface_flinger.set_idle_timer_ms=4000 \
     ro.surface_flinger.set_touch_timer_ms=4000 \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.defer_fps_frame_count=2
 
 # DPM
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpmhalservice.enable=1
 
 # Doze
@@ -173,7 +173,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.sensor.pickup=xiaomi.sensor.pickup
 
 # DRM
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     drm.service.enabled=true
 
 PRODUCT_PACKAGES += \
@@ -188,14 +188,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # FRP
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # GPS
 LOC_HIDL_VERSION = 4.0
 
 # Gatekeeper
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     vendor.gatekeeper.disable_spu=true
 
 # Health
@@ -216,7 +216,7 @@ PRODUCT_PACKAGES += \
     ueventd.xiaomi.rc
 
 # Keymaster
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.allow_encrypt_override=true \
     ro.crypto.volume.filenames_mode="aes-256-cts" \
     ro.hardware.keystore_desede=true
@@ -241,7 +241,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 TARGET_BOARD_PLATFORM := kona
 
 # QCRIL
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.radio.cdma_cap=true \
     persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.data_ltd_sys_ind=1 \
@@ -252,7 +252,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 TARGET_COMMON_QTI_COMPONENTS := all
 
 # Sensors
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.sensors.allow_non_default_discovery=true \
     persist.vendor.sensors.sync_request=true
 
@@ -277,23 +277,23 @@ PRODUCT_PACKAGES += \
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # SOC Properties
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=QTI \
     ro.soc.model=SM8250
 
 # Storage
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fuse.passthrough.enable=true \
     ro.incremental.enable=yes
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Subsystem silent restart
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Thermal
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # Update Engine
