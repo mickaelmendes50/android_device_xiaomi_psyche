@@ -33,7 +33,6 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_VENDOR_PROPERTIES += \
-    aaudio.mmap_policy=1 \
     persist.vendor.audio.delta.refresh=true \
     persist.vendor.audio.misound.disable=true \
     persist.vendor.audio.ring.filter.mask=0 \
@@ -44,7 +43,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.audio.karaok.support=true \
     ro.vendor.audio.ns.support=false \
     ro.vendor.audio.scenario.support=true \
-    ro.vendor.audio.sdk.fluencetype=fluence \
     ro.vendor.audio.soundfx.type=mi \
     ro.vendor.audio.soundfx.usb=true \
     ro.vendor.audio.support.sound.id=true \
@@ -52,13 +50,17 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.audio.us.type=mius \
     ro.vendor.audio.zoom.support=true \
     ro.vendor.audio.zoom.type=1 \
+    vendor.audio.spkcal.copy.inhal=true \
+    vendor.audio.usb.disable.sidetone=true
+
+PRODUCT_ODM_PROPERTIES += \
+    aaudio.mmap_policy=1 \
+    ro.vendor.audio.sdk.fluencetype=fluence \
     vendor.audio.adm.buffering.ms=6 \
     vendor.audio.feature.dynamic_ecns.enable=false \
     vendor.audio.feature.spkr_prot.enable=false \
     vendor.audio.hal.output.suspend.supported=false \
-    vendor.audio.offload.track.enable=false \
-    vendor.audio.spkcal.copy.inhal=true \
-    vendor.audio.usb.disable.sidetone=true
+    vendor.audio.offload.track.enable=false
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml
@@ -150,7 +152,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.display.sensortype=2 \
     vendor.display.qdcm.mode_combine=1 \
     vendor.display.use_layer_ext=0 \
-    vendor.display.use_smooth_motion=0
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.surface_flinger.set_idle_timer_ms=4000 \
@@ -160,6 +161,9 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.defer_fps_frame_count=2
+
+PRODUCT_ODM_PROPERTIES += \
+    vendor.display.use_smooth_motion=0
 
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
