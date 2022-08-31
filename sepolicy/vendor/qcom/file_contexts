@@ -1,2 +1,5 @@
 # Poweropt-service
 /(vendor|system/vendor)/bin/poweropt-service     u:object_r:vendor_poweroptservice_exec:s0
+
+# Label read_ahead_kb in /data partition
+/sys/devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/read_ahead_kb u:object_r:vendor_sysfs_scsi_host:s0
