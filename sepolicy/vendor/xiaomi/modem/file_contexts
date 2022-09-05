@@ -1,2 +1,3 @@
-# MSADP partition
-/dev/block/platform/soc/1d84000.ufshc/by-name/msadp  u:object_r:vendor_efs_boot_dev:s0
+# xiaomi modem boot devices
+/dev/block/platform/soc/1d84000.ufshc/by-name/msadp   u:object_r:vendor_efs_boot_dev:s0
+/dev/block/platform/soc/1d84000.ufshc/by-name/mdm1m9kefs[0-9]  u:object_r:vendor_efs_boot_dev:s0
