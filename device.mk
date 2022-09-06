@@ -92,6 +92,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.qcom.bluetooth.soc=hastings \
     persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
     ro.vendor.bluetooth.wipower=false \
+    vendor.hw.fm.init=0 \
     vendor.qcom.bluetooth.soc=hastings
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
