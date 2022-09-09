@@ -100,6 +100,14 @@ class XiaomiKonaUdfpsHander : public UdfpsHandler {
         int arg[2] = {TOUCH_FOD_ENABLE, FOD_STATUS_OFF};
         ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
     }
+
+    void onAcquired(int32_t /*result*/, int32_t /*vendorCode*/) {
+        // nothing
+    }
+
+    void cancel() {
+        // nothing
+    }
   private:
     fingerprint_device_t *mDevice;
     android::base::unique_fd touch_fd_;
