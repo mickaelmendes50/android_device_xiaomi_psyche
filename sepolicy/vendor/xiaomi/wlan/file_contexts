@@ -3,3 +3,4 @@
 
 # nv_mac
 /vendor/bin/nv_mac                            u:object_r:vendor_wcnss_service_exec:s0
+/mnt/vendor/persist/wlan(/.*)?                u:object_r:persist_wifi_file:s0
