@@ -158,9 +158,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
-PRODUCT_ODM_PROPERTIES += \
-    vendor.display.use_smooth_motion=0
-
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/display/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
