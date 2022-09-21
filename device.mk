@@ -147,7 +147,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.use_layer_ext=1 \
     vendor.display.defer_fps_frame_count=2
 
-PRODUCT_VENDOR_PROPERTIES += \
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_idle_timer_ms=4000 \
     ro.surface_flinger.set_touch_timer_ms=4000 \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
