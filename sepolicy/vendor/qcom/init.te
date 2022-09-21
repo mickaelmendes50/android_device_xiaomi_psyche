@@ -1,2 +1,0 @@
-# Allow init to set read_ahead_kb and discard_max_bytes on /data partition
-allow init vendor_sysfs_scsi_host:file w_file_perms;
