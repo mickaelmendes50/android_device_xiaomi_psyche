@@ -50,3 +50,14 @@ sh_binary {
     src: "init.qti.dcvs.sh",
     vendor: true,
 }
+
+cc_library_static {
+    name: "libinit_psyche",
+    recovery_available: true,
+    shared_libs: ["libbase"],
+    srcs: ["init_psyche.cpp"],
+    include_dirs: [
+        "system/core/init",
+        "system/libbase/include"
+    ]
+}
