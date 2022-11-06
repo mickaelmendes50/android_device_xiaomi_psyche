@@ -49,6 +49,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.audio.scenario.support=true \
     ro.vendor.audio.soundfx.type=mi \
     ro.vendor.audio.soundfx.usb=true \
+    ro.vendor.audio.support.sound.id=true \
     ro.vendor.audio.us.proximity=true \
     ro.vendor.audio.us.type=mius \
     ro.vendor.audio.zoom.support=true \
@@ -82,6 +83,11 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.bluetooth.wipower=false \
     vendor.hw.fm.init=0 \
     vendor.qcom.bluetooth.soc=hastings
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.vendor.btstack.enable.lpa=true \
+    persist.vendor.btstack.enable.twsplus=true \
+    persist.vendor.bt.a2dp.aac_whitelist=false
 
 # Boot
 PRODUCT_PACKAGES += \
@@ -138,7 +144,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.display.paneltype=2 \
     ro.vendor.display.sensortype=2 \
     vendor.display.qdcm.mode_combine=1 \
-    vendor.display.use_layer_ext=1 \
+    vendor.display.use_layer_ext=0 \
     vendor.display.defer_fps_frame_count=2
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
