@@ -624,7 +624,7 @@ vendor/lib64/libmmcamera_faceproc.so|9f12fe5b6671fbf4183051e201bda21ed7dc5dbe
 vendor/lib64/libmmcamera_faceproc2.so|3a09ebc6d06a140327c7ca7d506e6196bf0ffe60
 
 # Camera (postproc) - from LA.UM.9.14.r1-18400.02-LAHAINA.QSSI12.0
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|f0ee934ce0ceedaf3c429be7c644311e8343a6a8
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|afeca01f1fc2619ddf1aada01d42735ab9efa682
 
 # Charger - MIUI
 vendor/bin/batterysecret|b221c55cb8dc486c77412d60048f219c01d2531c
