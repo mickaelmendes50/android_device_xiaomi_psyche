@@ -92,6 +92,7 @@ vendor/lib/rfsa/adsp/misound_res_spk.bin|bcddfdf11759b41e88e14d724121bd26cd3c216
 vendor/etc/audio_configs.xml|eb74ffb11b3b5190bb8070f84de0798ed53ebc87
 vendor/etc/audio_configs_stock.xml|0bd072df25ff1641701bf9fa066bdfefd3b52565
 vendor/etc/audio_effects.conf|49e00ca08a1cc3688d2f88bbf67fae5a5ebeabb4
+vendor/etc/audio_effects.xml|d63f0289e1e2209a2c27c70eaba417c4d688def6
 vendor/etc/audio_io_policy.conf|2b38e2a34de25c2da90cba29851da3b33b42327a
 vendor/etc/audio_platform_info.xml|cbbe1bc50e43aa18f67a726a773c9f32549da609
 vendor/etc/audio_platform_info_intcodec.xml|31c2bd9f926d2e94232ae8575a34b99ce4579d14
@@ -125,7 +126,7 @@ vendor/etc/acdbdata/Tutu/Tutu_workspaceFile.qwsp|ff9f5213a1da0fa48d47e9eafa9dc18
 # Audio - MIUI
 vendor/bin/audioflacapp|b8277fa951476e4212380c5d29f8d9732e38eb32
 vendor/lib/hw/audio.primary.kona.so|df7e3f78880e567bd521a664218c12ac558c916b
-vendor/lib/hw/sound_trigger.primary.kona.so|a4bd35407a89d684aadc9d42981a48dadfa4fc1c
+vendor/lib/hw/sound_trigger.primary.kona.so|07cb776163316e1acd69a7c1246b95e09d142f51
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so|ee89b7cb4e0476688ac8c1a669dfe89c660b1a76
 vendor/lib/liba2dpoffload.so|a07564b6639cb4be80fed2a6e2787cf55a4e4b75
 vendor/lib/libacdb-fts.so|1a69c22267f913b37bac33494b422660aaf874ba
