@@ -1,2 +1,0 @@
-# allow nv_mac to create /mnt/vendor/persist/wlan_mac.bin
-allow vendor_wcnss_service persist_wifi_file:file create_file_perms;
