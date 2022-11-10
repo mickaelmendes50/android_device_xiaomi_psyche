@@ -86,4 +86,10 @@ ALL_DEFAULT_INSTALLED_MODULES += \
     $(RFS_MDM_TN_SYMLINKS) \
     $(WLAN_FIRMWARE_SYMLINKS)
 
+# Kernel headers
+$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr: $(wildcard device/xiaomi/psyche-kernel/kernel-headers/*)
+	rm -rf $@
+	mkdir -p $@/include
+	cp -a device/xiaomi/psyche-kernel/kernel-headers/. $@/include
+
 endif
