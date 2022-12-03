@@ -33,4 +33,7 @@
     ignore the gaze detection package -->
     <string translatable="false" name="config_cameraProtectionExcludedPackages">com.google.android.as</string>
 
+    <!-- The radius of the enrollment progress bar, in dp -->
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">106</integer>
+
 </resources>
