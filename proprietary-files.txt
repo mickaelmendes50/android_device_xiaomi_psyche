@@ -939,7 +939,6 @@ vendor/etc/libnfc-nci.conf|e3c02b4855b314bd7be008db6a7c8fc9d855147c
 vendor/etc/libnfc-nxp.conf|fc7d940f35a628b12bb2c8fdb94aa0b95341907e
 vendor/etc/libnfc-nxp_RF.conf|0c67a230995faaae86ed25c9aa282e9d4d3b2de3
 vendor/lib64/libsn100u_fw.so|faf26e1c362ec7640033aa606a51a6763568dca6
-vendor/libnfc-nxp_RF.conf
 
 # NPU
 vendor/bin/npu_launcher
