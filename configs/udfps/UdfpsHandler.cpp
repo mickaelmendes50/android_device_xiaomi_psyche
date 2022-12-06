@@ -16,14 +16,14 @@
 #include <unistd.h>
 
 #define COMMAND_NIT 10
-#define PARAM_NIT_FOD 1
+#define PARAM_NIT_UDFPS 1
 #define PARAM_NIT_NONE 0
 
-#define FOD_STATUS_ON 1
-#define FOD_STATUS_OFF -1
+#define UDFPS_STATUS_ON 1
+#define UDFPS_STATUS_OFF -1
 
 #define TOUCH_DEV_PATH "/dev/xiaomi-touch"
-#define TOUCH_FOD_ENABLE 10
+#define TOUCH_UDFPS_ENABLE 10
 #define TOUCH_MAGIC 0x5400
 #define TOUCH_IOC_SETMODE TOUCH_MAGIC + 0
 
@@ -86,7 +86,7 @@ class XiaomiKonaUdfpsHandler : public UdfpsHandler {
                 }
 
                 mDevice->extCmd(mDevice, COMMAND_NIT,
-                                readBool(fd) ? PARAM_NIT_FOD : PARAM_NIT_NONE);
+                                readBool(fd) ? PARAM_NIT_UDFPS : PARAM_NIT_NONE);
             }
         }).detach();
     }
@@ -100,20 +100,20 @@ class XiaomiKonaUdfpsHandler : public UdfpsHandler {
 
     void onAcquired(int32_t result, int32_t vendorCode) {
         if (result == FINGERPRINT_ACQUIRED_GOOD) {
-            int arg[2] = {TOUCH_FOD_ENABLE, FOD_STATUS_OFF};
+            int arg[2] = {TOUCH_UDFPS_ENABLE, UDFPS_STATUS_OFF};
             ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
         } else if (vendorCode == 21 || vendorCode == 23) {
             /*
              * vendorCode = 21 waiting for fingerprint authentication
              * vendorCode = 23 waiting for fingerprint enroll
              */
-            int arg[2] = {TOUCH_FOD_ENABLE, FOD_STATUS_ON};
+            int arg[2] = {TOUCH_UDFPS_ENABLE, UDFPS_STATUS_ON};
             ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
         }
     }
 
     void cancel() {
-        int arg[2] = {TOUCH_FOD_ENABLE, FOD_STATUS_OFF};
+        int arg[2] = {TOUCH_UDFPS_ENABLE, UDFPS_STATUS_OFF};
         ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
     }
   private:
