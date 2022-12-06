@@ -13,3 +13,7 @@ allow hal_sensors_default iio_device:chr_file rw_file_perms;
 
 # Allow Sensors to call Audio
 binder_call(hal_sensors_default, hal_audio_default)
+
+# Allow Sensors hal to r/w touchpanel nodes
+r_dir_file(hal_sensors_default, sysfs_touchpanel)
+allow hal_sensors_default sysfs_touchpanel:file rw_file_perms;
