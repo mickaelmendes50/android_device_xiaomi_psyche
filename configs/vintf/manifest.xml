@@ -600,26 +600,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>legacy/0</instance>
         </interface>
     </hal>
-    <!-- WIGIG HAL service -->
-    <hal format="hidl">
-        <name>vendor.qti.hardware.wigig.supptunnel</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISuppTunnelProvider</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <!-- WIGIG network performance tuner service -->
-    <hal format="hidl">
-        <name>vendor.qti.hardware.wigig.netperftuner</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INetPerfTuner</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <!-- FST manager service -->
     <hal format="hidl">
         <name>vendor.qti.hardware.fstman</name>
