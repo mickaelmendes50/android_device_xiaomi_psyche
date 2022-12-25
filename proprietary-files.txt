@@ -1241,7 +1241,6 @@ vendor/etc/sensors/config/sns_wrist_pedo.json|078bbc91b4bde41ad214ee81276485e657
 vendor/etc/sensors/config/sx932x_0.json|a91d52bbd7409ba000f4cb0e59006c4d042b03da
 vendor/etc/sensors/config/sx933x_0.json|cb8a20cbd9d2ea3798e06eb59166a3c7c1e249e4
 vendor/etc/sensors/config/tmd3719.json|82cb236c7b62a89106fa6e46b406665d5a4427db
-vendor/etc/sensors/hals.conf|f1710d96931b4732b28eb421eda47e151397e106
 vendor/etc/sensors/judge_calibrated.json|36141162353ddb015a8a8f2950bd25bc50b0433c
 vendor/etc/sensors/sensor_diag.cfg|a90a807b6e1a0ff524e13b0cc0e05a1a2845d48d
 vendor/etc/sensors/sns_reg_config|24301160a0164e148d1e7e9d09789301ea833613
