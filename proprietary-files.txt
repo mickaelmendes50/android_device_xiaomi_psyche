@@ -1193,7 +1193,6 @@ vendor/lib64/libqcbor.so
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service|9712de3546d87ef2b3a96e8a745de5afa441c400
 vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc|449c88778d880c0d47cc4d651fc60c4c424c1a3f
 vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml|f4884c1776c9f77c24bfce853fe22627ea4b7f79
-vendor/etc/permissions/qti_fingerprint_interface.xml|d3efc0abac8c064b3f8ccd783875b3d532972212
 vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so|07453df6dd525388302c10cb84305f1b16836eda
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|c94b40c8db796fa012a14d1d5fa6f9b20ee64172
 vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so|c8a5dcbb7a892bffda1a9cc398dd0280a7422371
