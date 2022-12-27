@@ -235,6 +235,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     AOSPAPsycheFrameworks \
     AOSPAPsycheSystemUI \
+    PsycheCarrierConfig \
     PsycheFrameworks \
     PsycheSettings \
     PsycheSystemUI \
