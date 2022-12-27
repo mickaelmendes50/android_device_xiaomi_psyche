@@ -236,6 +236,7 @@ PRODUCT_PACKAGES += \
     AOSPAPsycheFrameworks \
     AOSPAPsycheSettings \
     AOSPAPsycheSystemUI \
+    PsycheCarrierConfig \
     PsycheFrameworks \
     PsycheSettings \
     PsycheSystemUI \
