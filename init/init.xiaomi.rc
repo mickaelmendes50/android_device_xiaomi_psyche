@@ -5,6 +5,12 @@ import /vendor/etc/init/init.charge_logger.rc
 on init
     chown system system /proc/last_kmsg
 
+    # fingerprint
+    chmod 0664 /dev/fortsense_fp
+    chown system system /dev/fortsense_fp
+    chmod 0666 /dev/goodix_fp
+    chown system system /dev/goodix_fp
+
 on fs
     chmod 644 /mnt/vendor/persist/audio/us_manual_cal
     mkdir /mnt/vendor/persist/haptics 0755 system system
