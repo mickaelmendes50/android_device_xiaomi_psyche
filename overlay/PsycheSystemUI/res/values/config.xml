@@ -36,4 +36,7 @@
     <!-- The radius of the enrollment progress bar, in dp -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">106</integer>
 
+    <!-- Define UDFPS vendor code for AOD -->
+    <integer name="config_udfps_vendor_code">22</integer>
+
 </resources>
