@@ -803,7 +803,6 @@ vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
 
 # Fingerprint - MIUI
-vendor/lib/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so|ced861efb851411dfce93ecd965efd663855b551
 vendor/lib/vendor.xiaomi.hardware.fx.tunnel@1.0.so|896139320dfa2133503ed242bc6187f7c830b9ef
 vendor/lib64/libgf_hal.so|870e1b3be03385e2112df35abd4a4c0b69ac2a5b
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so|abce7ecbd6abb2f74d98a626bb5f2c55af99bff5
