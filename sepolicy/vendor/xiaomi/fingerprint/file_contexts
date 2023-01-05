@@ -5,3 +5,9 @@
 /data/vendor/goodix(/.*)?                 u:object_r:vendor_fingerprint_data_file:s0
 /mnt/vendor/persist/fpc(/.*)?             u:object_r:vendor_fingerprint_data_file:s0
 /mnt/vendor/persist/goodix(/.*)?          u:object_r:vendor_fingerprint_data_file:s0
+
+# Fingerprint devices
+/dev/goodix_fp                            u:object_r:fingerprint_device:s0
+
+# Fingerprint HAL
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.3-service\.xiaomi                              u:object_r:hal_fingerprint_default_exec:s0
