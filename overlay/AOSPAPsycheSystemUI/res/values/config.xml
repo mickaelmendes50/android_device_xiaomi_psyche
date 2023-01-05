@@ -22,10 +22,4 @@
     <!-- Color of the UDFPS pressed view -->
     <color name="config_udfpsColor">#ffffff</color>
 
-    <!-- HBM type of UDFPS overlay.
-            0 - GLOBAL HBM 
-            1 - LOCAL HBM
-    -->
-    <integer name="config_udfpsHbmType">0</integer>
-
 </resources>
