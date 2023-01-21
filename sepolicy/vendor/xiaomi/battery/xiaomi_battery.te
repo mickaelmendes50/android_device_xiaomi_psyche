@@ -1,0 +1,66 @@
+define(`xiaomi_battery',
+`{
+  batteryd
+  batterysecret
+}')
+
+type batteryd, domain;
+type batteryd_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(batteryd)
+
+type batterysecret, domain;
+type batterysecret_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(batterysecret)
+
+# {
+#   Allow battery daemon to read inside
+#   mnt_vendor_file and vendor_sysfs_battery_supply
+#   directories
+# }
+allow xiaomi_battery {
+  mnt_vendor_file
+  vendor_sysfs_battery_supply
+}:dir r_dir_perms;
+
+# {
+#   Allow xiaomi_battery to read files in
+#   cgroup/persist_subsys_file/roots/sysfs_type/
+#   vendor_sysfs_usb_supply/vendor_sysfs_usbpd_device
+#   directories
+# }
+r_dir_file(xiaomi_battery, cgroup)
+r_dir_file(xiaomi_battery, persist_subsys_file)
+r_dir_file(xiaomi_battery, rootfs)
+r_dir_file(xiaomi_battery, sysfs_type)
+r_dir_file(xiaomi_battery, vendor_sysfs_usb_supply)
+r_dir_file(xiaomi_battery, vendor_sysfs_usbpd_device)
+
+# {
+#   Allow battery daemon to write to
+#   persist_subsys_file/sysfs_usb/vendor_sysfs_battery_supply/
+#   vendor_sysfs_usb_supply/vendor_sysfs_usbpd_device
+# }
+allow xiaomi_battery {
+  persist_subsys_file
+  sysfs_usb
+  vendor_sysfs_battery_supply
+  vendor_sysfs_usb_supply
+  vendor_sysfs_usbpd_device
+}:file w_file_perms;
+
+# Allow xiaomi_battery to read sysfs_batteryinfo
+allow xiaomi_battery sysfs_batteryinfo:file r_file_perms;
+
+# Allow xiaomi_battery to read and write to /dev/kmsg
+allow xiaomi_battery kmsg_device:chr_file rw_file_perms;
+
+# Allow xiaomi_battery to create_socket_perms_no_ioctl
+allow xiaomi_battery self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+
+# Allow xiaomi_battery to set cyclecount property
+set_prop(xiaomi_battery, vendor_system_prop)
+
+# Allow xiaomi_battery to manage wakelocks
+wakelock_use(xiaomi_battery)
