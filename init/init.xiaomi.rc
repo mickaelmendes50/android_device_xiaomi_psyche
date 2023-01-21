@@ -1,4 +1,5 @@
 import /vendor/etc/init/init.batterysecret.rc
+import /vendor/etc/init/init.batteryd.rc
 import /vendor/etc/init/init.mi_thermald.rc
 import /vendor/etc/init/init.charge_logger.rc
 
@@ -42,8 +43,11 @@ on post-fs-data
 on boot
     chown system system /sys/touchpanel/double_tap
     chown system system /sys/class/touch/touch_dev/palm_sensor
+    chmod 0664 /sys/class/power_supply/battery/dc_thermal_levels
     chown system system /sys/class/touch/touch_dev/partial_diff_data
     chown system system /sys/class/thermal/thermal_message/sconfig
+    chown system system /sys/class/thermal/thermal_message/balance_mode
+    chown cameraserver cameraserver /sys/class/thermal/thermal_message/flash_state
     copy  /vendor/etc/tunings.txt /mnt/vendor/persist/vpp/tunings.txt
     mkdir /mnt/vendor/persist/camera 0755 system cameraserver
 

@@ -601,8 +601,10 @@ vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|29b23be4f6042
 vendor/etc/charger_fstab.qti|8464c139d93f05e86ff9c9d31b3e8617b8d9476e
 vendor/etc/init/init_qfp_daemon.rc|512054af94f4f85dd9ec0e3820292f8bc67c2214
 
-# Charger (Mi Turbo Charge) - MIUI
+# Charger - MIUI
+vendor/bin/batteryd|959978c58d7ea21a43eedfe337d93e94b987c510
 vendor/bin/batterysecret|b221c55cb8dc486c77412d60048f219c01d2531c
+vendor/etc/init/init.batteryd.rc|871885145ed45b229be9515a2fed624f0fcbc9f4
 vendor/etc/init/init.batterysecret.rc|9abbe6fd82a0bd5b4499bfe141a5645e76e57606
 
 # CNE
