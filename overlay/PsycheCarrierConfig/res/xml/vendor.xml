@@ -69,6 +69,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true" />
         <long name="carrier_data_call_apn_retry_after_disconnect_long" value="100" />
         <string name="gps.nfw_proxy_apps">com.example.android.locationattribution</string>
+        <!-- PA: Use 4G icon for LTE by popular request -->
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
         <!-- PA: Allow VoLTE and WFC by default -->
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
