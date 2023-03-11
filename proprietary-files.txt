@@ -211,6 +211,10 @@ vendor/lib/soundfx/libqcbassboost.so|00c29b4e50e67c5de4ad22e0284c500080b4c116
 vendor/lib/soundfx/libqcreverb.so|e90d723c6599b68d69109650e017d85f1ea9a582
 vendor/lib/soundfx/libqcvirt.so|942ce731900b949a262f00a0702af899c3ecc82b
 vendor/lib/soundfx/libshoebox.so|214d5fefd21c617bdfa05255fe667127b4242556
+vendor/lib/soundfx/libhwdap.so|659d51e9629379cd2f6eed8080b4cdde51ecda03
+vendor/lib/soundfx/libswdap.so|fce120540c27117692bb4d06c6cc1f75621c4bc3
+vendor/lib/soundfx/libswgamedap.so|38c9eb42c238efa9cfc05a65bd6c97aae4a5efaf
+vendor/lib/soundfx/libswvqe.so|ec88a3911bb8e51471b9d1b37b80335a83e3d33e
 
 # Audio (Firmware) - MIUI
 vendor/firmware/cs35l41-dsp1-diag-revb2.wmfw|43bdf47fd6f68c219bcfc8d161bc83406831fb86
@@ -932,6 +936,30 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libspcom.so
 
+# Media (Dolby) - MIUI
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|ff827406bbcd1c82e790730bb017b7af38850004
+vendor/etc/media_codecs_dolby_audio.xml|a794eb15fc198d0285510260025cd99b53fa174f
+vendor/etc/media_codecs_kona.xml|a87d08c35919e5bd36eccddfec6f32fbbdcab079
+vendor/etc/media_codecs_system_default.xml|3eff72fbd14f41bdc998182c34e1ca5346c36dbe
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
+vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
+vendor/lib/libOmxVpp.so|dc0958224e9c5923cd7d6eda221888a85929cd64
+vendor/lib/libdapparamstorage.so|d1952f09354f414238e5bd0f57dd0d3f85b8f769
+vendor/lib/libdeccfg.so|c9ea6a462e3a0d00e31223bf2a9c5dd84beff122
+vendor/lib/libstagefright_soft_ac4dec.so|80a061172b10767b49d25ab41829b8c3f065bab9
+vendor/lib/libstagefright_soft_ddpdec.so|f7c10aa69dc46e881021d198bdbca26157f1cc80
+vendor/lib/libstagefrightdolby.so|cc78b1ecc291a2ff69ba05d00652b500229c0c11
+vendor/lib/vendor.dolby.hardware.dms@2.0.so|2bf537bbf5c413527e5c648b8e63b95f904f7532
+vendor/lib64/libOmxVpp.so|5df57141b37d5b4ca1dd7b61d253f6b72143c5d7
+vendor/lib64/libdapparamstorage.so|a8e3bb20ee8579a13d5beef17a0ad251055e9d7b
+vendor/lib64/libdeccfg.so|8d9f0e66a16afe605490a30dd2943bb30cf3e4f6
+vendor/lib64/libdlbdsservice.so|4cb3fd194ef2ac578f2772b0679eff5a1f2318f6
+vendor/lib64/libstagefright_soft_ac4dec.so|d4cdad2d5b8b08e20a4da4517c1c8fbe15f6927a
+vendor/lib64/libstagefright_soft_ddpdec.so|b860975169b94d790f4148ae081db03f63fe6f44
+vendor/lib64/libstagefrightdolby.so|aae740a3a084ce784da22bbb940885969b234a55
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|e90be71a671e64662742b6ee36d7060ed9974726
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so|2020b5fd9abac65520224069bbe75d5e76d3f158
+
 # MDM - MIUI
 vendor/bin/ks|2bcc675556cd146a8a785145f9d2caa1b659b185
 vendor/bin/mdm_helper_proxy|e7ba5764336a32454e4f8de6ff3e1a9c9c2a61bd
@@ -1424,14 +1452,12 @@ vendor/firmware/cs35l41-dsp1-spk-prot.wmfw|b91438e3dff17db9e3b440d2769a7363139bc
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/vppservice.rc
-vendor/lib/libOmxVpp.so
 vendor/lib/libvppclient.so
 vendor/lib/libvpphcp.so
 vendor/lib/libvpphvx.so
 vendor/lib/libvppimmotion.so
 vendor/lib/libvpplibrary.so
 vendor/lib/libvpptestutils.so
-vendor/lib64/libOmxVpp.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
 vendor/lib64/libvpphvx.so

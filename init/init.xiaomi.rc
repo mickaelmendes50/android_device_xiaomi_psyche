@@ -40,6 +40,9 @@ on post-fs-data
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
 
+    #Create dir for dolby
+    mkdir /data/vendor/dolby 0770 media media
+
 on boot
     chown system system /sys/touchpanel/double_tap
     chown system system /sys/class/touch/touch_dev/palm_sensor
