@@ -262,6 +262,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     charging \
     display \
+    dsprpcd \
     gps \
     init \
     media \
