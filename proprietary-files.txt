@@ -594,13 +594,6 @@ vendor/lib64/camera/com.qti.tuned.psyche_sunny_s5k5e9yx04_macro.bin|e806fca72716
 # Camera (postproc) - from LA.UM.9.14.r1-18400.02-LAHAINA.QSSI12.0
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|afeca01f1fc2619ddf1aada01d42735ab9efa682
 
-# Charger (HVDCP) - MIUI
-vendor/bin/hvdcp_opti|d3dae2d3c64df366b82d11deb100af4d8813131f
-vendor/bin/init.qti.chg_policy.sh|9a96b05abdfe149eb8a7e20a791284e84b5fffe0
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|29b23be4f604282abf715f86aec9697175a9aaad
-vendor/etc/charger_fstab.qti|8464c139d93f05e86ff9c9d31b3e8617b8d9476e
-vendor/etc/init/init_qfp_daemon.rc|512054af94f4f85dd9ec0e3820292f8bc67c2214
-
 # Charger - MIUI
 vendor/bin/batteryd|959978c58d7ea21a43eedfe337d93e94b987c510
 vendor/bin/batterysecret|c839da8dcaef6b066fd203664226e55af303d4e3
