@@ -118,8 +118,6 @@ BOARD_KERNEL_CMDLINE := \
     service_locator.enable=1 \
     swiotlb=2048
 
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_OFFSET := 0x01000000
