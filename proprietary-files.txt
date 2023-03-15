@@ -678,7 +678,6 @@ vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
-vendor/lib64/libminksocket.so
 
 # Consumer IR - MIUI
 vendor/lib64/hw/consumerir.default.so|c5c8947ace6c6479914a57ad609a961eebf0b949
@@ -746,10 +745,6 @@ vendor/firmware/ipa_uc.b01|7f7616aaf0f5cb0ca4e7ba95b52f34fd6c2c8e83
 vendor/firmware/ipa_uc.b02|4c7bcc7e9e5285194d271931d31128a6a6660823
 vendor/firmware/ipa_uc.elf|2bf676296b659acb6ca08120852b0629064c03ea
 vendor/firmware/ipa_uc.mdt|3455890606e5a8776369a9dc239d5ae7e97f75e8
-
-# Diag
-vendor/lib/libdiag.so
-vendor/lib64/libdiag.so
 
 # Display
 vendor/bin/hw/vendor.display.color@1.0-service
@@ -1112,26 +1107,13 @@ vendor/radio/qcril_database/qcril.db
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/libGPQTEEC_vendor.so
-vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_listener.so
-vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # QSEECOM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
-vendor/bin/qseecomd
-vendor/etc/init/qseecomd.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/etc/gpfspath_oem_config.xml
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/librpmb.so
-vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
 # QSPM HAL
@@ -1168,7 +1150,6 @@ vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 # SMC Invoke
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
-vendor/lib64/libminkdescriptor.so
 vendor/lib64/libnative-api.so
 vendor/lib64/libqcbor.so
 
@@ -1293,19 +1274,13 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 # SecureMSM
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
-vendor/lib64/libbase64.so
-vendor/lib64/libcpion.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/liboemcrypto.so
-vendor/lib64/libops.so
 vendor/lib64/libpvr.so
-vendor/lib64/libqisl.so
 vendor/lib64/librmp.so
 vendor/lib64/libspl.so
-vendor/lib64/libtrustedapploader.so
-vendor/lib64/libtzdrmgenprov.so
 
 # Soter
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
@@ -1372,7 +1347,6 @@ vendor/etc/thermald-devices.conf|12d33ce9c3420572a07419d3317083eafe5b82e8
 vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
-vendor/lib64/libtime_genoff.so
 
 # Touchfeature - MIUI
 vendor/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service|dc27181a449029c29eb860916db15c3c338b6602
