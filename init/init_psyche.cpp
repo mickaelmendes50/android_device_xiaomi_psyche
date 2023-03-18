@@ -49,6 +49,7 @@ void vendor_load_properties() {
     property_override("ro.product.manufacturer", "Xiaomi");
     property_override("ro.product.model", "2112123AG");
     property_override("ro.product.name", "psyche");
+    property_override("ro.product.mod_device", "psyche_global");
 
     load_dalvikvm_properties();
 }

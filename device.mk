@@ -100,6 +100,8 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 # Camera
+$(call inherit-product-if-exists, device/xiaomi/psyche-miuicamera/config.mk)
+
 PRODUCT_VENDOR_PROPERTIES += \
     camera.disable_zsl_mode=true
 
@@ -116,6 +118,10 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
 
 PRODUCT_PACKAGES += \
     libpiex_shim

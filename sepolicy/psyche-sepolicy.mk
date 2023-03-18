@@ -16,6 +16,10 @@
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
     device/xiaomi/psyche/sepolicy/public
 
+# Private Sepolicy
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
+    device/xiaomi/psyche/sepolicy/private
+
 # QCOM Sepolicy
 BOARD_SEPOLICY_DIRS += \
     device/xiaomi/psyche/sepolicy/vendor/qcom
