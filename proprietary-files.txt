@@ -108,6 +108,7 @@ vendor/etc/acdbdata/Tutu/Tutu_workspaceFile.qwsp|ff9f5213a1da0fa48d47e9eafa9dc18
 # Audio - MIUI 13.0.5
 vendor/bin/audioflacapp|b8277fa951476e4212380c5d29f8d9732e38eb32
 vendor/lib/hw/audio.primary.kona.so|df7e3f78880e567bd521a664218c12ac558c916b
+vendor/lib/hw/sound_trigger.primary.kona.so|07cb776163316e1acd69a7c1246b95e09d142f51
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so|ee89b7cb4e0476688ac8c1a669dfe89c660b1a76
 vendor/lib/liba2dpoffload.so|a07564b6639cb4be80fed2a6e2787cf55a4e4b75
 vendor/lib/libacdb-fts.so|1a69c22267f913b37bac33494b422660aaf874ba
