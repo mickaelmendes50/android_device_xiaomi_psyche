@@ -818,7 +818,7 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.gnss@4.0-service.so 
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so 
 
-# HotwordEnrollment - MIUI
+# HotwordEnrollment - MIUI 13.0.5
 product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|8ade0dc8f37d68d7e7deaf162cf8badded474673
 product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|ecb7a72da92f5fdbf8b842f6fd0043623f508f5e
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|99cfd80965c170f4885a7dd62c0eaad1a0c7840f
