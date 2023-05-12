@@ -512,7 +512,6 @@ vendor/etc/camera/reid_float.dlc|f78285e63f1c8c460ac27c475d3f16d2e75f172b
 vendor/etc/camera/sceneDetection.xml|d11306bfb791c49d1e0fcbfe48b15f44fa237139
 vendor/etc/camera/seg_quantized.dlc|1c982e1875c29994792ae95031fab93af3661dd8
 vendor/etc/camera/sr_params.xml|abce7b3df83bd85b002a1ebf2c3d1e98f2850839
-vendor/etc/camera/st_license.lic|20ee12b483957b062c0e676ed18026481bd5b857
 vendor/etc/camera/vidhance_calibration|cd3ecaf5a2052967a0a2df7ea8f8dc8e0907369e
 
 # Camera features - MIUI
