@@ -259,26 +259,11 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
-    adreno \
-    audio \
-    av \
-    bt \
+    all \
     charging \
-    display \
     dsprpcd \
-    gps \
-    init \
     keymaster \
-    media \
-    nfc \
-    overlay \
-    perf \
-    qseecomd \
-    telephony \
-    usb \
-    vibrator \
-    wfd \
-    wlan
+    qseecomd
 
 # Sensors
 PRODUCT_VENDOR_PROPERTIES += \
