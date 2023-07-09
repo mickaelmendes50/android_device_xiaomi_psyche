@@ -11,6 +11,7 @@
 #include <android-base/logging.h>
 #include <android-base/unique_fd.h>
 #include <fcntl.h>
+#include <fstream>
 #include <poll.h>
 #include <thread>
 #include <unistd.h>
@@ -27,10 +28,25 @@
 #define TOUCH_MAGIC 0x5400
 #define TOUCH_IOC_SETMODE TOUCH_MAGIC + 0
 
+#define DISPPARAM_PATH "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/disp_param"
+
+#define DISPPARAM_HBM_UDFPS_ON "0x20001"
+#define DISPPARAM_HBM_UDFPS_OFF "0xE0000"
+
 static const char* kFodUiPaths[] = {
         "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui",
         "/sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui",
 };
+
+namespace {
+
+    template <typename T>
+    static void set(const std::string& path, const T& value) {
+        std::ofstream file(path);
+        file << value;
+    }
+
+} // anonymous namespace
 
 static bool readBool(int fd) {
     char c;
@@ -55,7 +71,6 @@ class XiaomiKonaUdfpsHandler : public UdfpsHandler {
   public:
     void init(fingerprint_device_t *device) {
         mDevice = device;
-
         touch_fd_ = android::base::unique_fd(open(TOUCH_DEV_PATH, O_RDWR));
 
         std::thread([this]() {
@@ -92,14 +107,14 @@ class XiaomiKonaUdfpsHandler : public UdfpsHandler {
     }
 
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
-        // nothing
+        set(DISPPARAM_PATH, DISPPARAM_HBM_UDFPS_ON);
     }
     void onFingerUp() {
-        // nothing
+        set(DISPPARAM_PATH, DISPPARAM_HBM_UDFPS_OFF);
     }
-
     void onAcquired(int32_t result, int32_t vendorCode) {
         if (result == FINGERPRINT_ACQUIRED_GOOD) {
+            set(DISPPARAM_PATH, DISPPARAM_HBM_UDFPS_OFF);
             int arg[2] = {TOUCH_UDFPS_ENABLE, UDFPS_STATUS_OFF};
             ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
         } else if (vendorCode == 21 || vendorCode == 23) {
@@ -113,6 +128,7 @@ class XiaomiKonaUdfpsHandler : public UdfpsHandler {
     }
 
     void cancel() {
+        set(DISPPARAM_PATH, DISPPARAM_HBM_UDFPS_OFF);
         int arg[2] = {TOUCH_UDFPS_ENABLE, UDFPS_STATUS_OFF};
         ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
     }

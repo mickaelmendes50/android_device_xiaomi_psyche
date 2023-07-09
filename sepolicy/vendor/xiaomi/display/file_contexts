@@ -1,0 +1,21 @@
+# Graphics nodes
+/sys/devices/platform/soc/[a-f0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_param              u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/dynamic_fps             u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/hbm_status              u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/panel_info              u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/smart_fps_value         u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/backlight/panel0-backlight/brightness 					  u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,msm-ext-disp/extcon/extcon0(/.*)?                                    u:object_r:vendor_sysfs_graphics:s0
+
+# Display Panel Features
+/sys/class/drm/card0/card0-DSI-1/disp_param                              			u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/disp_param 	u:object_r:vendor_sysfs_graphics:s0
+/sys/class/backlight/panel0-backlight/brightness      			                    u:object_r:vendor_sysfs_graphics:s0
+/sys/class/backlight/panel0-backlight/brightness_clone           			        u:object_r:vendor_sysfs_graphics:s0
+/sys/class/drm/card0-DSI-1/disp_param                                    			u:object_r:vendor_sysfs_graphics:s0
+/sys/class/drm/card0-DSI-1/dim_alpha                                     			u:object_r:vendor_sysfs_graphics:s0
+/sys/class/drm/card0-DSI-1/doze_brightness                    			            u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/virtual/graphics/fb0/msm_fb_dispparam                       			u:object_r:vendor_sysfs_graphics:s0
+/sys/class/mi_display/disp-DSI-0/wp_info                      			            u:object_r:vendor_sysfs_graphics:s0
+/sys/class/mi_display/disp-DSI-0                                         			u:object_r:vendor_sysfs_graphics:s0
+/sys/class/mi_display/disp-DSI-1                             			            u:object_r:vendor_sysfs_graphics:s0
