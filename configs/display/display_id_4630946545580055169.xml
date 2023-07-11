@@ -1,21 +1,6 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 
 <displayConfiguration>
-    <!-- Global Brightness-Nit mapping -->
-    <screenBrightnessMap>
-        <point>
-            <value>0.001709819</value>
-            <nits>2.0</nits>
-        </point>
-        <point>
-            <value>0.49975574</value>
-            <nits>500.0</nits>
-        </point>
-        <point>
-            <value>1.0</value>
-            <nits>900.0</nits>
-        </point>
-    </screenBrightnessMap>
     <!-- root node for HBM-->
     <highBrightnessMode enabled="true">
         <!-- Transition point brightness from normal to HBM mode -->
@@ -49,6 +34,4 @@
             </point>
         </sdrHdrRatioMap>
     </highBrightnessMode>
-    <ambientLightHorizonLong>3000</ambientLightHorizonLong>
-    <ambientLightHorizonShort>1000</ambientLightHorizonShort>
 </displayConfiguration>
