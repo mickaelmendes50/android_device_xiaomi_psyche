@@ -2,6 +2,10 @@
 get_prop(vendor_mdm_helper, vendor_ssr_prop)
 
 # Allow MDM helper to create vendor_tombstone_data_file
+allow vendor_mdm_helper vendor_tombstone_data_file:dir create_dir_perms;
+allow vendor_mdm_helper vendor_tombstone_data_file:dir rw_dir_perms;
+allow vendor_mdm_helper vendor_tombstone_data_file:file create_file_perms;
+allow vendor_mdm_helper vendor_tombstone_data_file:file rw_file_perms;
 allow vendor_mdm_helper vendor_tombstone_data_file:fifo_file create_file_perms;
 
 # Allow MDM helper r/w to MSADP partition
