@@ -16,7 +16,9 @@
 <resources>
 
     <!-- Radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">126px</dimen>
+    <dimen name="rounded_corner_radius">167.0px</dimen>
+    <dimen name="rounded_corner_radius_top">197.0px</dimen>
+    <dimen name="rounded_corner_radius_bottom">167.0px</dimen>
 
     <!-- Adjustment for software rounded corners since corners aren't perfectly round. -->
     <dimen name="rounded_corner_radius_adjustment">22px</dimen>
@@ -24,7 +26,7 @@
     <!-- Height of the status bar in portrait. The height should be
          Max((status bar content height + waterfall top size), top cutout size) -->
     <dimen name="status_bar_height_portrait">38dp</dimen>
-    <dimen name="status_bar_height_landscape">28dp</dimen>
+    <dimen name="status_bar_height_landscape">24.0dip</dimen>
 
     <!-- Height of area above QQS where battery/time go (equal to status bar) -->
     <dimen name="quick_qs_offset_height">38dp</dimen>
