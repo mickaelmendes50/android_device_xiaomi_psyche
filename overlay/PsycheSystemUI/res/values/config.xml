@@ -16,7 +16,7 @@
 -->
 <resources>
 
-    <dimen name="keyguard_indication_margin_bottom">10dp</dimen>
+    <dimen name="keyguard_indication_margin_bottom">4dp</dimen>
 
     <!-- Default rounded corner curve (a Bezier). Must match (the curved path in) rounded.xml.
          Note that while rounded.xml includes the entire path (including the horizontal and vertical
