@@ -297,8 +297,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fuse.passthrough.enable=true \
     ro.incremental.enable=yes
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
 # Subsystem silent restart
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.ssr.restart_level=ALL_ENABLE
