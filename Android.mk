@@ -18,6 +18,12 @@ ifneq ($(filter psyche, $(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
+# Kernel headers
+$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr: $(wildcard device/xiaomi/psyche-kernel/kernel-headers/*)
+	rm -rf $@
+	mkdir -p $@/include
+	cp -a device/xiaomi/psyche-kernel/kernel-headers/. $@/include
+
 # Symlinks
 RFS_MDM_ADSP_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/mdm/adsp/
 $(RFS_MDM_ADSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)

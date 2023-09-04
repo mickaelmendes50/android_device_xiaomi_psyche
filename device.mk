@@ -215,6 +215,15 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.xiaomi.rc
 
+# Kernel
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)-kernel/kernel
+
+PRODUCT_COPY_FILES += \
+    $(TARGET_PREBUILT_KERNEL):kernel \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)-kernel/vendor-modules,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
+
+PRODUCT_VENDOR_KERNEL_HEADERS += $(LOCAL_PATH)-kernel/kernel-headers
+
 # Keymaster
 PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.allow_encrypt_override=true \
@@ -224,6 +233,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    $(LOCAL_PATH)-kernel \
     hardware/xiaomi
 
 # Overlays
