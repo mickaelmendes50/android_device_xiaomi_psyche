@@ -77,6 +77,17 @@ PRODUCT_PACKAGES += \
     DolbyManager
 
 # Bluetooth
+TARGET_USE_AIDL_QTI_BT_AUDIO := true
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.profile.bap.broadcast.assist.enabled=true \
+    bluetooth.profile.bap.broadcast.source.enabled=true \
+    bluetooth.profile.bap.unicast.client.enabled=true \
+    bluetooth.profile.vcp.controller.enabled=true \
+    bluetooth.profile.csip.set_coordinator.enabled=true \
+    bluetooth.profile.mcp.server.enabled=true \
+    bluetooth.profile.ccp.server.enabled=true
+
 PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
     persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false \
