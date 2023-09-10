@@ -823,6 +823,27 @@ vendor/bin/mdm_helper_proxy|e7ba5764336a32454e4f8de6ff3e1a9c9c2a61bd
 vendor/bin/mdm_helper|aeb8aad56538231d57b7e945c918da39f0c19941
 vendor/lib64/libmdmimgload.so|5f9a20c24dd7f981eec4618769ef74ade0704d54
 
+# Media (Dolby) - MIUI
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|ff827406bbcd1c82e790730bb017b7af38850004
+vendor/etc/dolby/dax-default.xml|3d79b4d5642b569a6c459d47df762aa528a4d5e5
+vendor/etc/dolby_vision.cfg|c3463bed9ec555fac077a2608cdd34e47219148f
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
+vendor/etc/media_codecs_dolby_audio.xml|a794eb15fc198d0285510260025cd99b53fa174f
+vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
+vendor/lib/libdeccfg.so|c9ea6a462e3a0d00e31223bf2a9c5dd84beff122
+vendor/lib/libstagefrightdolby.so|cc78b1ecc291a2ff69ba05d00652b500229c0c11
+vendor/lib/libstagefright_soft_ac4dec.so|80a061172b10767b49d25ab41829b8c3f065bab9
+vendor/lib/libstagefright_soft_ddpdec.so|f7c10aa69dc46e881021d198bdbca26157f1cc80
+vendor/lib/vendor.dolby.hardware.dms@2.0.so|2bf537bbf5c413527e5c648b8e63b95f904f7532
+vendor/lib64/libdapparamstorage.so|a8e3bb20ee8579a13d5beef17a0ad251055e9d7b
+vendor/lib64/libdlbdsservice.so|c4658f58874db5964a74e9509a4e0160affd164f
+vendor/lib64/libstagefrightdolby.so|aae740a3a084ce784da22bbb940885969b234a55
+vendor/lib64/soundfx/libhwdap.so|647f4c387ae7e1b70cf856493dd2e8a3cb10af13
+vendor/lib64/soundfx/libswgamedap.so|ce3c4efed44b3634b07669977a5a6e26a1ca23d8
+vendor/lib64/soundfx/libswvqe.so|5cf9fcc0a59af3474dfe18a4b10e1472defd11fc
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|e90be71a671e64662742b6ee36d7060ed9974726
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so|2020b5fd9abac65520224069bbe75d5e76d3f158
+
 # MMI
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
 vendor/bin/mmid
