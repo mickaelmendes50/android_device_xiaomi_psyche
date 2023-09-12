@@ -50,5 +50,9 @@ void vendor_load_properties() {
     property_override("ro.product.model", "2112123AG");
     property_override("ro.product.name", "psyche");
 
+    // sku properties
+    property_override("ro.boot.hardware.sku", "psyche");
+    property_override("ro.boot.product.hardware.sku", "psyche");
+
     load_dalvikvm_properties();
 }

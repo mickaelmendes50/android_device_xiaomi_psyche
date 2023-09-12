@@ -255,6 +255,7 @@ PRODUCT_PACKAGES += \
     AOSPAPsycheSystemUI \
     PsycheCarrierConfig \
     PsycheFrameworks \
+    PsycheNfc \
     PsycheSettings \
     PsycheSystemUI \
     FrameworksResTarget \
