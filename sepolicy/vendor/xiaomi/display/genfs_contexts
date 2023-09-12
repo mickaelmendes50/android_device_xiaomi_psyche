@@ -1,0 +1,2 @@
+# Display dim layer Exposure
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_exposure                                                         u:object_r:vendor_sysfs_graphics:s0
