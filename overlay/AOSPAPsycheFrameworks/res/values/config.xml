@@ -36,7 +36,7 @@
     <bool name="config_enableKeyHandler">true</bool>
 
     <!-- Fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">Xiaomi/psyche_global/psyche:12/RKQ1.211001.001/V13.0.5.0.SLDMIXM:user/release-keys</string>
+    <string name="config_stockFingerprint" translatable="false">Xiaomi/psyche_global/psyche:13/RKQ1.211001.001/V14.0.4.0.TLDMIXM:user/release-keys</string>
 
      <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
     <string name="config_dozeUdfpsLongPressSensorType" translatable="false">co.aospa.sensor.udfps</string>
