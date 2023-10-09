@@ -38,22 +38,20 @@
          center top of the display. Optionally, you can append either `@left` or `@right` to the
          end of the path string, in order to change the path origin to either the top left,
          or top right of the display.
+
          To facilitate writing device-independent emulation overlays, the marker `@dp` can be
          appended after the path string to interpret coordinates in dp instead of px units.
          Note that a physical cutout should be configured in pixels for the best results.
+
          Example for a 10px x 10px square top-center cutout:
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z</string>
+
          Example for a 10dp x 10dp square top-center cutout:
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
+
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M 514,52
-        a 20,20 0 1 0 52,0
-        a 20,20 0 1 0 -52,0
-        Z
-        @left
-    </string>
+    <string name="config_mainBuiltInDisplayCutout" translatable="false">M -33 52 a 33 33 0 1 0 66 0 a 33 33 0 1 0 -66 0 Z</string>
 
     <!-- Like config_mainBuiltInDisplayCutout, but this path is used to report the
          one single bounding rect per device edge to the app via
@@ -61,14 +59,7 @@
          appearance of the cutout as much as possible, and may be smaller than
          config_mainBuiltInDisplayCutout
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
-        M 493.5,0
-        h 95
-        v 95
-        h -95
-        Z
-        @left
-    </string>
+    <string name="config_mainBuiltInDisplayCutoutRectApproximation">M 0,0 H -33 V 87 H 33 V 0 H 0 Z</string>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
       in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
