@@ -30,4 +30,8 @@
     default that should be overridden by device-specific overlays. -->
     <dimen name="physical_power_button_center_screen_location_y">980px</dimen>
 
+    <!-- The padding at start and end of indication text shown on AOD -->
+    <dimen name="keyguard_indication_text_padding">10dp</dimen>
+    <dimen name="ambient_indication_margin_bottom">10dp</dimen>
+
 </resources>
