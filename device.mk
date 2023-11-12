@@ -232,9 +232,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml
 
-# MIUI Camera
-$(call inherit-product-if-exists, vendor/xiaomi/psyche-miuicamera/products/miuicamera.mk)
-
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
