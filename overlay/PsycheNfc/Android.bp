@@ -14,5 +14,5 @@
 
 runtime_resource_overlay {
     name: "PsycheNfc",
-    device_specific: true,
+    product_specific: true,
 }
