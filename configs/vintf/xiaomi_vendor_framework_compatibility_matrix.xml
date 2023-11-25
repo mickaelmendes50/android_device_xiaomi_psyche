@@ -71,6 +71,16 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- CitSensor -->
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.citsensorservice</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>ICitSensorService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- Touchfeature -->
     <hal format="hidl" optional="true">
         <name>vendor.xiaomi.hardware.touchfeature</name>
