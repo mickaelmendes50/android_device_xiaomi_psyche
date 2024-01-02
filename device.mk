@@ -247,7 +247,8 @@ PRODUCT_PACKAGES += \
     PsycheSettings \
     PsycheSystemUI \
     FrameworksResTarget \
-    WifiResTarget
+    WifiResTarget \
+    WifiMainline
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
