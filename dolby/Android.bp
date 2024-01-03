@@ -6,11 +6,12 @@
 //
 
 android_app {
-    name: "DolbyManager",
+    name: "XiaomiDolby",
     certificate: "platform",
     srcs: ["src/**/*.java"],
     platform_apis: true,
     privileged: true,
+    overrides: ["MusicFX"],
     system_ext_specific: true,
     static_libs: [
         "androidx.core_core",

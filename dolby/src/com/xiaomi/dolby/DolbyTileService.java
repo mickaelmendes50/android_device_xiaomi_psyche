@@ -1,4 +1,4 @@
-package co.aospa.settings.dolby;
+package com.xiaomi.dolby;
 
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
@@ -8,11 +8,13 @@ public class DolbyTileService extends TileService {
     @Override
     public void onStartListening() {
         Tile tile = getQsTile();
-        if (DolbyUtils.getInstance(getApplicationContext()).getDsOn()) {
+        DolbyUtils dolbyUtils = DolbyUtils.getInstance(getApplicationContext());
+        if (dolbyUtils.getDsOn()) {
             tile.setState(Tile.STATE_ACTIVE);
         } else {
             tile.setState(Tile.STATE_INACTIVE);
         }
+        tile.setSubtitle(dolbyUtils.getProfileName());
         tile.updateTile();
         super.onStartListening();
     }

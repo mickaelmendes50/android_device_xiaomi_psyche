@@ -4,18 +4,18 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package co.aospa.settings;
+package com.xiaomi.dolby;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import co.aospa.settings.dolby.DolbyUtils;
+import com.xiaomi.dolby.DolbyUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
-    private static final String TAG = "DolbyManager";
+    private static final String TAG = "XiaomiDolby";
     private static final boolean DEBUG = true;
 
     @Override
@@ -24,6 +24,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             return;
         }
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
-        DolbyUtils.getInstance(context).onBootCompleted();
+        DolbyUtils.getInstance(context);
     }
 }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.aospa.settings.dolby;
+package com.xiaomi.dolby;
 
 import android.os.Bundle;
 
